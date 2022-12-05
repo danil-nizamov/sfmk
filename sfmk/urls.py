@@ -19,5 +19,5 @@ from youtube import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('video/', views.video_view)
+    path('video/<str:video_id>', views.video_view),
 ]
